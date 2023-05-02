@@ -290,7 +290,7 @@ header .right>* {
 }
 
 .picture {
-    background-image: url(/img/img_gallery_big2.jpg);
+    background-image: url(//img/img_gallery_big2.jpg);
     width: 50%;
     height: 400px;
     border-radius: 5px;
@@ -563,7 +563,7 @@ header .right>* {
 .pic {
     width: 820px;
     height: 460px;
-    background: url(/img/도서관1.png);
+    background: url(//img/도서관1.png);
     /* box-shadow: 0px 0px 60px #00000025; */
     border-radius: 10px;
 }
@@ -766,7 +766,7 @@ ul.tabs li.current {
 }
 
 .container .swiper-button-next {
-    background-image: url(/img/next2.png);
+    background-image: url(//img/next2.png);
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
@@ -777,7 +777,7 @@ ul.tabs li.current {
 }
 
 .container .swiper-button-prev {
-    background-image: url(/img/prev2.png);
+    background-image: url(//img/prev2.png);
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
@@ -803,7 +803,7 @@ ul.tabs li.current {
 .sec4 .top {
     text-align: center;
     padding: 90px 0;
-    background: url(/img/thomas-renaud-tEzFyBNxcJg-unsplash.jpg) no-repeat;
+    background: url(//img/thomas-renaud-tEzFyBNxcJg-unsplash.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
     color: #fff;
