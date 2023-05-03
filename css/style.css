@@ -1014,3 +1014,7 @@ ul.tabs li.current {
 video {
     border-radius: 5px;
 }
+
+#map:focus {
+    outline: none;
+}
