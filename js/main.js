@@ -38,45 +38,6 @@ $(".pic").vegas({
 });
 // 베가스
 
-// Hide Header on on scroll down
-// var didScroll;
-// var lastScrollTop = 0;
-// var delta = 5;
-// var navbarHeight = $("header").outerHeight();
-
-// $(window).scroll(function (event) {
-//   didScroll = true;
-// });
-
-// setInterval(function () {
-//   if (didScroll) {
-//     hasScrolled();
-//     didScroll = false;
-//   }
-// }, 250);
-
-// function hasScrolled() {
-//   var st = $(this).scrollTop();
-
-//   // Make sure they scroll more than delta
-//   if (Math.abs(lastScrollTop - st) <= delta) return;
-
-//   // If they scrolled down and are past the navbar, add class .nav-up.
-//   // This is necessary so you never see what is "behind" the navbar.
-//   if (st > lastScrollTop && st > navbarHeight) {
-//     // Scroll Down
-//     $("header").removeClass("nav-down").addClass("nav-up");
-//   } else {
-//     // Scroll Up
-//     if (st + $(window).height() < $(document).height()) {
-//       $("header").removeClass("nav-up").addClass("nav-down");
-//     }
-//   }
-
-//   lastScrollTop = st;
-// }
-// // 헤더 나오기
-
 $(function () {
   $(".tabcontent > div").hide();
   $(".tabnav a")
@@ -150,4 +111,14 @@ var swiper = new Swiper(".secondSwiper", {
     el: ".swiper-spagination",
     clickable: true,
   },
+});
+
+var map = new naver.maps.Map("map", {
+  center: new naver.maps.LatLng(37.5112, 127.0981), // 잠실 롯데월드를 중심으로 하는 지도
+  zoom: 15,
+});
+
+var marker = new naver.maps.Marker({
+  position: new naver.maps.LatLng(37.5112, 127.0981),
+  map: map,
 });
