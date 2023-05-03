@@ -971,7 +971,7 @@ ul.tabs li.current {
     position: relative;
 }
 
-.bn2 .bd {
+.bn2>.bd {
     background: linear-gradient(to right, #3db1ed, rgb(61, 177, 237, .5));
     left: 0;
     border-radius: 27px;
