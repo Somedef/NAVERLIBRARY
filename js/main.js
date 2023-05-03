@@ -81,7 +81,7 @@ var swiper = new Swiper(".mySwiper", {
   slidesPerView: 3,
   speed: 500,
   spaceBetween: 50,
-  centeredSlides: true,
+  loopAdditionalSlides: 1,
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,
@@ -114,7 +114,7 @@ var swiper = new Swiper(".secondSwiper", {
 });
 
 var map = new naver.maps.Map("map", {
-  center: new naver.maps.LatLng(37.359371, 127.105147), // 잠실 롯데월드를 중심으로 하는 지도
+  center: new naver.maps.LatLng(37.359371, 127.105147),
   zoom: 15,
 });
 
