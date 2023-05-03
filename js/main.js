@@ -114,11 +114,11 @@ var swiper = new Swiper(".secondSwiper", {
 });
 
 var map = new naver.maps.Map("map", {
-  center: new naver.maps.LatLng(37.5112, 127.0981), // 잠실 롯데월드를 중심으로 하는 지도
+  center: new naver.maps.LatLng(37.359371, 127.105147), // 잠실 롯데월드를 중심으로 하는 지도
   zoom: 15,
 });
 
 var marker = new naver.maps.Marker({
-  position: new naver.maps.LatLng(37.5112, 127.0981),
+  position: new naver.maps.LatLng(37.359371, 127.105147),
   map: map,
 });
