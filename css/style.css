@@ -617,6 +617,10 @@ footer {
     padding: 85px 0;
 }
 
+footer .inner {
+    position: relative;
+}
+
 footer .inner>* {
     display: flex;
 }
