@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+
+html {
+    font-size: 50%;
+}
+
+body {
+    min-width: auto;
+}
+
+section {
+    padding: 100px 0;
+}
+
+.inner {
+    width: 100%;
+    padding: 0 60px;
+}
+
+.bottom_btn,
+.picture {
+    display: none;
+}
+
+.sec1 {
+    height: 50vh;
+
+}
+
+.sec1 .intro {
+    position: relative;
+    left: 50%;
+    top: -50px;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec1 .intro h2,
+.sec1 .intro p {
+    text-align: center;
+}
+
+.sec1 .intro a {
+    position: relative;
+}
+
+.sec2 {
+    padding-bottom: 50px;
+}
+
+.sec2 .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec2 .txt {
+    padding-right: 0;
+    padding-bottom: 135px;
+}
+
+.sec2 .txt h2,
+.sec2 .txt p {
+    text-align: center;
+}
+
+
+.sec2 .bottom {
+    width: 100%;
+}
+
+.hoverslide {
+    position: relative;
+    left: 0;
+    width: 100%;
+}
+
+.sec3 {
+    padding-top: 100px;
+}
+
+.sec3 .inner {
+    border: none;
+    padding-bottom: 50px;
+}
+
+.tabnav li {
+    margin: 0;
+}
+
+.tabcontent>* {
+    display: flex;
+    flex-direction: column;
+}
+
+video,
+.pic,
+.award {
+    margin-top: 50px;
+}
+
+.sec3 br {
+    display: none;
+}
