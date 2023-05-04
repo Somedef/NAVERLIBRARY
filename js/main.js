@@ -16,6 +16,7 @@ $(document).ready(function () {
     $(this).children("ul").stop().fadeOut(200);
   });
 });
+// 헤더
 
 $(".sec1").vegas({
   slides: [
@@ -25,6 +26,7 @@ $(".sec1").vegas({
   ],
   animation: ["kenburnsDownLeft", "kenburnsUpLeft", "kenburnsUp"],
 });
+// main 베가스
 
 $(".pic").vegas({
   slides: [
@@ -36,7 +38,7 @@ $(".pic").vegas({
   ],
   animation: ["kenburnsDownLeft", "kenburnsUpLeft", "kenburnsUp"],
 });
-// 베가스
+// 베가스 this is us
 
 $(function () {
   $(".tabcontent > div").hide();
@@ -50,7 +52,7 @@ $(function () {
     .filter(":eq(0)")
     .click();
 });
-// 탭메뉴
+// 탭메뉴 this is us
 
 $(document).ready(function () {
   $("ul.tabs li").click(function () {
@@ -75,6 +77,7 @@ $(document).ready(function () {
     $("#" + tab_id).addClass("current");
   });
 });
+// 도서 슬라이드 탭
 
 var swiper = new Swiper(".mySwiper", {
   loop: true,
@@ -95,6 +98,7 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+// 도서 스와이퍼
 
 var swiper = new Swiper(".secondSwiper", {
   speed: 700,
@@ -112,6 +116,7 @@ var swiper = new Swiper(".secondSwiper", {
     clickable: true,
   },
 });
+// .sec5 슬라이드
 
 var map = new naver.maps.Map("map", {
   center: new naver.maps.LatLng(37.359371, 127.105147),
@@ -122,3 +127,9 @@ var marker = new naver.maps.Marker({
   position: new naver.maps.LatLng(37.359371, 127.105147),
   map: map,
 });
+// 네이버지도
+
+$(document).on("click", 'a[href="#"]', function (e) {
+  e.preventDefault();
+});
+// 탑이동방지

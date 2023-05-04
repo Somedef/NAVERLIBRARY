@@ -1,18 +1,6 @@
 @charset "UTF-8";
 
 
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translate3d(0, 100%, 0);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateZ(0);
-    }
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -83,10 +71,10 @@ header .inner {
 }
 
 header .logo {
-    background: url(../img/01\ NAVER\ Logo_Green.png) 0 0 no-repeat;
-    width: 87px;
-    height: 17px;
+    background: url(../img/logo3.png) 0 0 no-repeat;
     background-size: contain;
+    width: 205.4px;
+    height: 19.2px;
 }
 
 header .gnb {
@@ -201,14 +189,17 @@ header .right>* {
 
 
 .sec1 {
-    height: 90vh;
+    height: 100vh;
+}
+
+.sec1 .inner {
     position: relative;
 }
 
 .sec1 .intro {
     position: absolute;
-    left: 13%;
-    top: 35%;
+    left: 0;
+    top: 200px;
 }
 
 .sec1 .intro h2,
@@ -249,8 +240,35 @@ header .right>* {
     font-family: 'NanumSquareAcr';
 }
 
+.bottom_btn {
+    position: absolute;
+    top: 615px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-animation: arrowMove 1.6s infinite;
+    animation: arrowMove 1.6s infinite;
+    transition: .3s;
+}
+
+.bottom_btn img {
+    width: 50%;
+    height: 50%;
+}
+
+@keyframes arrowMove {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(8px);
+    }
+}
+
 .sec2 {
-    background-color: #f7f7f7;
+    background-color: #f9f9f9;
 }
 
 .sec2 .inner {
@@ -332,7 +350,7 @@ header .right>* {
 }
 
 .hoverslide .box.b02 {
-    background: #F7F7F9;
+    background: #f9f9f9;
 }
 
 .hoverslide .box.b03 {
@@ -472,17 +490,18 @@ header .right>* {
 }
 
 .tabnav {
+    /* outline: 1px solid black; */
     display: flex;
     justify-content: space-evenly;
 }
 
 .tabnav li {
+    /* outline: 1px solid black; */
     display: inline-block;
     text-align: center;
-    /* border: 1px solid #3db1ed; */
     margin: 0 -400px;
-    border-radius: 15px;
     transition: .3s;
+    border: 1px solid #009FE3;
 }
 
 
@@ -584,6 +603,7 @@ header .right>* {
     display: flex;
     justify-content: space-between;
     align-items: self-start;
+    color: #aaa;
 }
 
 .sec3 .more img {
@@ -770,7 +790,7 @@ ul.tabs li.current {
 }
 
 .sec4 {
-    padding-top: 350px;
+    padding-top: 250px;
 }
 
 .sec4 .top {
@@ -921,7 +941,7 @@ ul.tabs li.current {
 }
 
 .sec5 {
-    background-color: #f5f9ff;
+    background-color: #f9f9f9;
     font-family: 'NanumSquareAceb';
     font-size: 1.8rem;
     padding: 50px;
@@ -942,6 +962,26 @@ ul.tabs li.current {
 .bn1 .txt {
     display: flex;
     flex-direction: column;
+}
+
+.bn1 .link {
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px 56px 0 0;
+    font-size: 1.4rem;
+}
+
+.bn1 .link a {
+    color: rgb(51, 51, 51, .6);
+    font-family: 'NanumSquareAcb';
+}
+
+.bn1 .link a:last-child {
+    margin-left: 20px;
+}
+
+.bn1 .link a:hover {
+    text-decoration: underline;
 }
 
 .bn1 p {
