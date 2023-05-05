@@ -111,12 +111,45 @@ var swiper = new Swiper(".secondSwiper", {
   loopAdditionalSlides: 1,
   slidesPerView: 4,
   spaceBetween: 20,
+  breakpoints: {
+    501: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+  },
   pagination: {
     el: ".swiper-spagination",
     clickable: true,
   },
 });
 // .sec5 슬라이드
+
+function FaqBox__init() {
+  $(".faq-box > ul > li").click(function () {
+    let $this = $(this);
+
+    $this.siblings(".hover").find(" > .faq-box__answer").stop().slideUp(300);
+    $this.siblings(".hover").removeClass("hover");
+
+    if ($this.hasClass("hover")) {
+      $this.find(" > .faq-box__answer").stop().slideUp(300);
+      $this.removeClass("hover");
+    } else {
+      $this.find(" > .faq-box__answer").stop().slideDown(300);
+      $this.addClass("hover");
+    }
+  });
+
+  $(".faq-box__answer").click(function () {
+    return false;
+  });
+}
+
+FaqBox__init();
 
 var map = new naver.maps.Map("map", {
   center: new naver.maps.LatLng(37.359371, 127.105147),

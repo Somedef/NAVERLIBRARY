@@ -118,6 +118,12 @@ video,
     padding-top: 100px;
 }
 
+.sec4 ul li {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .sec4 .bottom {
     display: flex;
     flex-direction: column;
@@ -185,3 +191,4 @@ footer {
 .container .swiper-wrapper {
     margin-left: 50px;
 }
+
