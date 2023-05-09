@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+html {
+    font-size: 55%;
+}
+
+body {
+    min-width: 375px;
+}
+
+.inner,
+.faq .inner {
+    padding: 0 30px;
+}
+
+.sec1 .intro h2,
+#map,
+#f3 {
+    display: none;
+}
+
+.sec1 .intro p {
+    margin-top: 100px;
+}
+
+.bn2 p {
+    flex-direction: column;
+}
+
+.bn2 p span {
+    margin-bottom: 10px;
+}
+
+.award img {
+    width: 100%;
+}

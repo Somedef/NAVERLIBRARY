@@ -1,3 +1,5 @@
+AOS.init();
+
 $(document).ready(function () {
   $(".gnb li").on("mouseover focusin", function () {
     $(this).children("ul").stop().fadeIn(300);
@@ -112,6 +114,10 @@ var swiper = new Swiper(".secondSwiper", {
   slidesPerView: 4,
   spaceBetween: 20,
   breakpoints: {
+    375: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
     501: {
       slidesPerView: 3,
       spaceBetween: 20,
