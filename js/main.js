@@ -2,16 +2,10 @@ AOS.init();
 
 $(document).ready(function () {
   $(".gnb li").on("mouseover focusin", function () {
-    $(this).children("ul").stop().fadeIn(300);
+    $(this).children("ul").stop().fadeIn(200);
   });
   $(".gnb li").on("mouseleave", function () {
     $(this).children("ul").stop().fadeOut(200);
-  });
-  $(".gnb").on("mouseover focusin", function () {
-    $(".bg_gnb").stop().fadeIn(300);
-  });
-  $(".gnb").on("mouseleave focusout", function () {
-    $(".bg_gnb").stop().fadeOut(200);
   });
   //1뎁스 메뉴에서 키보드 초점이 벗어나면 ul이 없어지는 작용을 한다.
   $(".gnb > li").on("focusout", function () {
@@ -19,16 +13,6 @@ $(document).ready(function () {
   });
 });
 // 헤더
-
-$(".sec1").vegas({
-  slides: [
-    { src: "img/도서관6.png", delay: 10000 },
-    { src: "img/도서관8.png", delay: 10000 },
-    { src: "img/도서관1.png", delay: 10000 },
-  ],
-  animation: ["kenburnsDownLeft", "kenburnsUpLeft", "kenburnsUp"],
-});
-// main 베가스
 
 $(".pic").vegas({
   slides: [
@@ -134,29 +118,6 @@ var swiper = new Swiper(".secondSwiper", {
 });
 // .sec5 슬라이드
 
-function FaqBox__init() {
-  $(".faq-box > ul > li").click(function () {
-    let $this = $(this);
-
-    $this.siblings(".hover").find(" > .faq-box__answer").stop().slideUp(300);
-    $this.siblings(".hover").removeClass("hover");
-
-    if ($this.hasClass("hover")) {
-      $this.find(" > .faq-box__answer").stop().slideUp(300);
-      $this.removeClass("hover");
-    } else {
-      $this.find(" > .faq-box__answer").stop().slideDown(300);
-      $this.addClass("hover");
-    }
-  });
-
-  $(".faq-box__answer").click(function () {
-    return false;
-  });
-}
-
-FaqBox__init();
-
 var map = new naver.maps.Map("map", {
   center: new naver.maps.LatLng(37.359371, 127.105147),
   zoom: 15,
@@ -172,3 +133,13 @@ $(document).on("click", 'a[href="#"]', function (e) {
   e.preventDefault();
 });
 // 탑이동방지
+
+$(function () {
+  $(".hamburger-button").on("click", function (event) {
+    event.preventDefault();
+
+    $(this).toggleClass("active");
+    $(".overlay").toggleClass("active");
+  });
+});
+// 햄버거

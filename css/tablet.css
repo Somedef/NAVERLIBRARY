@@ -29,11 +29,11 @@ header {
 }
 
 .sec1 {
-    height: 50vh;
+    /* height: 50vh; */
 }
 
 .sec1 .intro {
-    top: -70px;
+    top: 125px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -191,4 +191,3 @@ footer {
 .container .swiper-wrapper {
     margin-left: 50px;
 }
-
