@@ -172,6 +172,7 @@ header .right>* {
 .sec1 {
     position: relative;
     padding: 0;
+    background-color: rgb(249, 249, 249);
 }
 
 .sec1 video {
