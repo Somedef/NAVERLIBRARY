@@ -851,7 +851,7 @@ ul.tabs li.current {
 .sec4 .top {
     text-align: center;
     padding: 90px 0;
-    background: url(../img/thomas-renaud-tEzFyBNxcJg-unsplash.jpg) no-repeat;
+    background: url(../img/jason-leung-Xaanw0s0pMk-unsplash.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
     color: #fff;
@@ -861,7 +861,7 @@ ul.tabs li.current {
 .bd {
     width: 100%;
     height: 100%;
-    background-color: rgba(126, 126, 126, 0.35);
+    background-color: rgba(126, 126, 126, 0.25);
     position: absolute;
     top: 0;
 }
