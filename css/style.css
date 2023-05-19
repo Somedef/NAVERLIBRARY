@@ -993,6 +993,10 @@ ul.tabs li.current {
     margin-right: 7px;
 }
 
+.sec4 ul li span:last-child img {
+    margin-left: 150px;
+}
+
 .sec4 ul li p {
     margin-top: 25px;
     line-height: 1.5;
