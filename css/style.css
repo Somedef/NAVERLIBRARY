@@ -28,8 +28,6 @@ body {
 section {
     width: 100%;
     padding: 150px 0;
-    /* background-color: transparent; */
-    /* outline: 1px solid black; */
 }
 
 .inner {
@@ -38,29 +36,43 @@ section {
     /* outline: 1px solid black; */
 }
 
-
-.clear {
-    clear: both;
-}
-
-.clear:after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
 button {
     cursor: pointer;
 }
 
+header.active {
+    background: #fff;
+    box-shadow: 0 2px 2px rgb(0, 0, 0, .15);
+}
+
+header.active .inner ul li a,
+header.active .right a:nth-child(1) {
+    color: #333;
+    font-family: 'NanumSquareAcb';
+}
+
+header.active .globe {
+    background: url(../img/icons8-globe-24\ \(1\).png);
+    width: 24px;
+    height: 24px;
+}
+
+/* 헤더고정 */
+
 header {
     width: 100%;
     margin: 0 auto;
-    position: absolute;
+    position: fixed;
+    top: 0;
     z-index: 1000;
     font-family: 'NanumSquareAcr';
     display: flex;
-    padding: 15px 0;
+    padding: 10px 0;
+    transition: 0.2s;
+}
+
+.nav-up {
+    top: -80px
 }
 
 header .inner {
@@ -107,10 +119,12 @@ header .gnb>li ul {
     display: none;
     position: absolute;
     z-index: 10;
-    background-color: rgb(61, 177, 237, .9);
+    background-color: #fff;
     width: 180px;
     padding: 10px 0;
     border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 40px #41414125;
 }
 
 header .gnb>li ul li {
@@ -123,12 +137,13 @@ header .gnb>li ul li a {
     padding: 16px;
     font-size: 1.6rem;
     font-family: 'NanumSquareAcb';
-    color: #fff;
+    color: #333;
+    transition: .2s;
 }
 
 header .gnb>li ul li a:hover,
 header .gnb>li ul li a:focus {
-    color: #e4f893;
+    color: #3db1ed;
 }
 
 header .gnb>li:nth-child(1) ul,
@@ -148,7 +163,7 @@ header .right>* {
     top: -107px;
 }
 
-.right {
+header .right {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -156,16 +171,22 @@ header .right>* {
     /* outline: 1px solid black; */
 }
 
-.right>* {
+header .right>a {
     margin-left: 20px;
 }
 
-.right>a {
+header .right>a:nth-child(1) {
     font-size: 1.4rem;
     font-family: 'NanumSquareAcl';
     color: #fff;
     padding-top: 2px;
     letter-spacing: 0.5px;
+}
+
+.globe {
+    background: url(../img/icons8-globe-24.png);
+    width: 24px;
+    height: 24px;
 }
 
 
@@ -679,13 +700,16 @@ footer .inner>* {
 
 
 .container h2 {
-    font-size: 6rem;
-    font-family: 'NanumSquareNeoLight';
-    color: #333;
+    font-size: 6.5rem;
+    font-family: 'NanumSquareBold';
+    color: #C4C4C4;
+    position: absolute;
+    right: 465px;
+    top: -70px;
 }
 
 .container p {
-    font-size: 2rem;
+    font-size: 2.4rem;
     font-family: 'NanumSquareAcr';
     line-height: 30px;
     color: rgb(51, 51, 51, .8);
@@ -871,7 +895,7 @@ ul.tabs li.current {
     font-size: 6rem;
     font-family: 'NanumSquareAcl';
     position: relative;
-    z-index: 1000;
+    z-index: 999;
 }
 
 .sec4 .top p {
@@ -881,7 +905,7 @@ ul.tabs li.current {
     color: #fff;
     margin-top: 30px;
     position: relative;
-    z-index: 1000;
+    z-index: 999;
 }
 
 .sec4 .bottom {
@@ -1091,7 +1115,7 @@ ul.tabs li.current {
 }
 
 .bn2 .txt {
-    z-index: 1000;
+    z-index: 999;
     color: #fff;
     margin-right: 50px;
 }
@@ -1120,7 +1144,7 @@ ul.tabs li.current {
     font-family: 'NanumSquareAcl';
     display: flex;
     justify-content: space-between;
-    z-index: 1000;
+    z-index: 999;
 }
 
 .sec3 video {
@@ -1137,7 +1161,11 @@ ul.tabs li.current {
     width: 22.5px;
     height: 17px;
     margin-top: 2px;
-    z-index: 9999;
+    z-index: 1000;
+}
+
+header.active .hamburger-button span {
+    background-color: #333;
 }
 
 .hamburger-button span {
@@ -1173,6 +1201,10 @@ ul.tabs li.current {
 
 .hamburger-button.active span:nth-child(3) {
     transform: rotate(-45deg);
+}
+
+header.active .overlay {
+    background-color: #fff;
 }
 
 .overlay {
@@ -1234,27 +1266,27 @@ ul.tabs li.current {
     visibility: visible;
 }
 
-.active nav ul li {
+.overlay.active nav ul li {
     animation: fadeInLeft 0.3s ease forwards;
 }
 
-nav ul li:nth-child(1) {
+.overlay nav ul li:nth-child(1) {
     animation-delay: 0.2s;
 }
 
-nav ul li:nth-child(2) {
+.overlay nav ul li:nth-child(2) {
     animation-delay: 0.23s;
 }
 
-nav ul li:nth-child(3) {
+.overlay nav ul li:nth-child(3) {
     animation-delay: 0.26s;
 }
 
-nav ul li:nth-child(4) {
+.overlay nav ul li:nth-child(4) {
     animation-delay: 0.29s;
 }
 
-nav ul li:nth-child(5) {
+.overlay nav ul li:nth-child(5) {
     animation-delay: 0.32s;
 }
 
