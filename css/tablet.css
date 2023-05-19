@@ -2,7 +2,7 @@
 
 
 html {
-    font-size: 55%;
+    font-size: 50%;
 }
 
 body {
@@ -18,18 +18,17 @@ section {
     padding: 0 60px;
 }
 
+.sec1 p,
 .bottom_btn,
 .picture,
-.gnb {
+.gnb,
+.container .tabs,
+.container .top h2 {
     display: none;
 }
 
 header {
     padding: 25px 0;
-}
-
-.sec1 {
-    /* height: 50vh; */
 }
 
 .sec1 .intro {
@@ -101,7 +100,7 @@ video,
     flex-direction: column;
 }
 
-video,
+.sec3 video,
 .pic,
 .award,
 .sec4 .bottom .left:last-child,
@@ -190,4 +189,43 @@ footer {
 
 .container .swiper-wrapper {
     margin-left: 50px;
+}
+
+.tab-content {
+    width: 100%;
+    right: 60px;
+    padding: 0 60px;
+}
+
+.container .swiper-slide {
+    height: 350px;
+    margin-top: 100px;
+}
+
+.container .swiper-wrapper {
+    outline: 1px solid black;
+    right: 0;
+    top: 0;
+}
+
+.container .top {
+    position: absolute;
+    /* outline: 1px solid black; */
+    text-align: center;
+    top: 0;
+}
+
+.container .top br {
+    display: none;
+}
+
+.container .top p {
+    margin-top: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.container {
+    align-items: center;
+    margin-bottom: 350px;
 }

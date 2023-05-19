@@ -1,26 +1,42 @@
 @charset "UTF-8";
 
 html {
-    font-size: 55%;
+    font-size: 48%;
 }
 
 body {
     min-width: 375px;
 }
 
-.inner,
-.faq .inner {
+.inner {
     padding: 0 30px;
 }
 
 .sec1 .intro h2,
 #map,
-#f3 {
+#f3,
+header .right a:nth-child(1),
+.hoverslide .icons8 {
     display: none;
 }
 
-.sec1 .intro p {
-    margin-top: 100px;
+.sec2 {
+    padding: 50px 0 150px 0;
+}
+
+.hoverslide {
+    flex-direction: column;
+}
+
+.hoverslide>* {
+    padding-top: 20px;
+}
+
+.hoverslide .box.b04 button,
+.hoverslide .box.b03 button,
+.hoverslide .box.b02 button,
+.hoverslide .box.b01 button {
+    margin-bottom: 20px;
 }
 
 .bn2 p {

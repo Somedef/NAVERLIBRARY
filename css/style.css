@@ -756,7 +756,8 @@ ul.tabs li.current {
 }
 
 .container .swiper-wrapper {
-    outline: 1px solid black;
+    /* outline: 1px solid black; */
+    position: absolute;
     left: 10px;
     top: 10px;
 }

@@ -71,6 +71,14 @@ var swiper = new Swiper(".mySwiper", {
   speed: 500,
   spaceBetween: 50,
   loopAdditionalSlides: 1,
+  breakpoints: {
+    375: {
+      slidesPerView: 2,
+    },
+    681: {
+      slidesPerView: 3,
+    },
+  },
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,
@@ -102,7 +110,7 @@ var swiper = new Swiper(".secondSwiper", {
       slidesPerView: 2,
       spaceBetween: 20,
     },
-    501: {
+    681: {
       slidesPerView: 3,
       spaceBetween: 20,
     },
