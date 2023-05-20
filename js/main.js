@@ -1,4 +1,9 @@
-AOS.init();
+AOS.init({
+  disable: function () {
+    var desktop = 1024;
+    return window.innerWidth < desktop;
+  },
+});
 
 $(document).ready(function () {
   $(".gnb li").on("mouseover focusin", function () {
@@ -203,3 +208,22 @@ $(function () {
   });
 });
 // 햄버거
+
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 400) {
+    $(".go-top").fadeIn();
+  } else {
+    $(".go-top").fadeOut();
+  }
+});
+$(".go-top").click(function () {
+  $("html, body").animate({ scrollTop: 0 }, 400);
+  return false;
+});
+// 탑버튼
+
+const handleClick = (movie) => {
+  document.body.style.overflowY = "hidden";
+  setModalOpen(true);
+  setMovieSelected(movie);
+};
