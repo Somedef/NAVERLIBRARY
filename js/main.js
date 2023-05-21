@@ -199,16 +199,6 @@ $(document).on("click", 'a[href="#"]', function (e) {
 });
 // 탑이동방지
 
-$(function () {
-  $(".hamburger-button").on("click", function (event) {
-    event.preventDefault();
-
-    $(this).toggleClass("active");
-    $(".overlay").toggleClass("active");
-  });
-});
-// 햄버거
-
 $(window).scroll(function () {
   if ($(this).scrollTop() > 400) {
     $(".go-top").fadeIn();
@@ -222,8 +212,11 @@ $(".go-top").click(function () {
 });
 // 탑버튼
 
-const handleClick = (movie) => {
-  document.body.style.overflowY = "hidden";
-  setModalOpen(true);
-  setMovieSelected(movie);
-};
+$(".hamburger,header.active .hamburger").click(function () {
+  $(".modal").fadeIn(150);
+});
+
+$(".modal>.right>img:nth-child(4)").click(function () {
+  $(".modal").fadeOut(150);
+});
+// 모달

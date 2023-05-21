@@ -12,12 +12,17 @@ body {
     padding: 0 30px;
 }
 
-.sec1 .intro h2,
+.sec1 .intro h1,
 #map,
 #f3,
 header .right a:nth-child(1),
-.hoverslide .icons8 {
+.hoverslide .icons8,
+.go-top {
     display: none;
+}
+
+.sec1 .intro a {
+    bottom: 35px;
 }
 
 .sec2 {
@@ -49,4 +54,13 @@ header .right a:nth-child(1),
 
 .award img {
     width: 100%;
+}
+
+.modal .right {
+    right: 30px;
+    top: 25px;
+}
+
+.modal-inner {
+    padding: 0 60px;
 }

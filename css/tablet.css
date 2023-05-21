@@ -23,7 +23,8 @@ section {
 .picture,
 .gnb,
 .container .tabs,
-.container .top h2 {
+.container .top h2,
+.go-top {
     display: none;
 }
 
@@ -32,7 +33,7 @@ header {
 }
 
 .sec1 .intro {
-    top: 125px;
+    bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -40,7 +41,7 @@ header {
     align-items: center;
 }
 
-.sec1 .intro h2,
+.sec1 .intro h1,
 .sec1 .intro p {
     text-align: center;
 }
@@ -228,4 +229,13 @@ footer {
 .container {
     align-items: center;
     margin-bottom: 350px;
+}
+
+.modal .right {
+    right: 60px;
+    top: 25px;
+}
+
+.modal-inner {
+    padding: 0 60px;
 }
