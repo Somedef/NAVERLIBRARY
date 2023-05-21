@@ -1273,6 +1273,7 @@ ul.tabs li.current {
     color: #fff;
     font-family: 'NanumSquareAcr';
     letter-spacing: 0.5px;
+    z-index: 9999;
 }
 
 .go-top span {
@@ -1280,4 +1281,132 @@ ul.tabs li.current {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+@media all and (min-width: 1025px) and (max-width: 1439px) {
+    body {
+        min-width: auto;
+    }
+
+    .inner {
+        width: 100%;
+        padding: 0 30px;
+    }
+
+    .picture,
+    header .right a:nth-child(1) {
+        display: none;
+    }
+
+    header {
+        white-space: nowrap;
+    }
+
+    header .gnb>li>a {
+        padding: 0 8px;
+    }
+
+    .sec1 .intro {
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sec1 .intro h1,
+    .sec1 .intro p {
+        text-align: center;
+    }
+
+    .sec1 .intro a {
+        position: relative;
+    }
+
+    .sec2 {
+        padding-bottom: 50px;
+    }
+
+    .sec2 .inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sec2 .txt {
+        padding-right: 0;
+        padding-bottom: 135px;
+    }
+
+    .sec2 .txt h2,
+    .sec2 .txt p {
+        text-align: center;
+    }
+
+    .sec2 .bottom {
+        width: 100%;
+    }
+
+    .hoverslide {
+        position: relative;
+        left: 0;
+        width: 100%;
+    }
+
+    .sec3 {
+        padding-top: 100px;
+    }
+
+    .sec3 .inner {
+        border: none;
+        padding-bottom: 50px;
+    }
+
+    .tabnav li {
+        margin: 0;
+    }
+
+    .tabcontent>* {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sec3 br {
+        display: none;
+    }
+
+    .sec3 video,
+    .pic,
+    .award,
+    .secondSwiper,
+    .bn2 {
+        margin-top: 50px;
+    }
+
+    .sec4 ul li {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .sec5 .inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sec5 .bn1,
+    .sec5 .bn2 {
+        width: 100%;
+    }
+
+    .modal .right {
+        right: 30px;
+        top: 37.5px;
+    }
+
+    .modal-inner {
+        padding: 0 30px;
+    }
 }
