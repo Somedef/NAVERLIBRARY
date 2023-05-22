@@ -17,7 +17,9 @@ body {
 #f3,
 header .right a:nth-child(1),
 .hoverslide .icons8,
-.go-top {
+.go-top,
+.modal-inner>ul>li>ul>li>a,
+.container p br {
     display: none;
 }
 
@@ -62,5 +64,11 @@ header .right a:nth-child(1),
 }
 
 .modal-inner {
-    padding: 0 30px;
+    margin-top: 200px;
+    padding-right: 30px;
+    text-align: right;
+}
+
+.container .top p {
+    white-space: nowrap;
 }
