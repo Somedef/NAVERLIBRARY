@@ -19,7 +19,8 @@ header .right a:nth-child(1),
 .hoverslide .icons8,
 .go-top,
 .modal-inner>ul>li>ul>li>a,
-.container p br {
+.container p br,
+.sec4 .bottom .left img {
     display: none;
 }
 
