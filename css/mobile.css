@@ -69,6 +69,10 @@ header .right a:nth-child(1),
     text-align: right;
 }
 
+.container {
+    left: 0;
+}
+
 .container .top p {
     white-space: nowrap;
 }
