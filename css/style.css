@@ -594,11 +594,16 @@ header .right>a:nth-child(1),
     font-family: 'NanumSquareAcb';
 }
 
+#tab02 .line {
+    right: -10px;
+    top: 9px;
+}
+
 .pic {
     width: 820px;
     height: 460px;
     background: url(../img/도서관1.png);
-    box-shadow: 0px 0px 40px rgba(104, 104, 104, 0.3);
+    border-radius: 10px;
 }
 
 .tabcontent {
@@ -737,12 +742,12 @@ footer .inner>* {
 
 
 .container h2 {
-    font-size: 6.5rem;
-    font-family: 'NanumSquareBold';
-    color: #C4C4C4;
+    font-size: 8rem;
+    font-family: 'NanumSquareNeoLight';
+    color: #c5c5c5;
     position: absolute;
     right: 465px;
-    top: -70px;
+    top: -100px;
 }
 
 .container .top p {
@@ -789,6 +794,21 @@ ul.tabs li.current span::after {
         opacity: 1;
         transform: translateZ(0);
     }
+}
+
+#tab01 {
+    position: relative;
+}
+
+.line {
+    width: 820px;
+    height: 460px;
+    background: #e1e1e1;
+    position: absolute;
+    border-radius: 0 10px 15px 10px;
+    right: -8px;
+    top: 10px;
+    z-index: -10;
 }
 
 ul.tabs li.current {
@@ -845,6 +865,7 @@ ul.tabs li.current {
     position: absolute;
     bottom: 0;
     background-color: #fff;
+    border-radius: 0 0 15px 15px;
 }
 
 .container .swiper-slide .txt p {
@@ -872,6 +893,7 @@ ul.tabs li.current {
     left: 50%;
     transform: translate(-50%, -30%);
     box-shadow: -7px 0px 13px 3px #00000025;
+    border-radius: 7.5px;
 }
 
 .container .swiper-button-next {
@@ -879,8 +901,8 @@ ul.tabs li.current {
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
-    left: -400px;
-    top: 500px;
+    left: -420px;
+    top: 350px;
     /* width: 68px;
     height: 68px; */
 }
@@ -891,9 +913,7 @@ ul.tabs li.current {
     background-position: center;
     position: absolute;
     left: -470px;
-    top: 500px;
-    /* width: 68px;
-    height: 68px; */
+    top: 350px;
 }
 
 .container .swiper-button-next::after,
@@ -1179,7 +1199,9 @@ ul.tabs li.current {
 }
 
 .sec3 video {
-    box-shadow: 0px 0px 40px rgba(78, 78, 78, 0.3);
+    /* box-shadow: 0px 0px 40px rgba(78, 78, 78, 0.3); */
+    border-radius: 10px;
+    border: 1px solid #e1e1e1;
 }
 
 #map:focus {
