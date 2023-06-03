@@ -12,7 +12,7 @@ body {
     padding: 0 30px;
 }
 
-.sec1 .intro h1,
+
 #map,
 #f3,
 header .right a:nth-child(1),
@@ -20,8 +20,21 @@ header .right a:nth-child(1),
 .go-top,
 .modal-inner>ul>li>ul>li>a,
 .container p br,
-.sec4 .bottom .left img {
+.sec4 .bottom .left img,
+.sec1 .intro a {
     display: none;
+}
+
+.sec1 .intro h1 {
+    font-size: 24px;
+}
+
+.sec4 .bottom>* {
+    padding: 50px 30px;
+}
+
+.sec4 .bottom a {
+    width: 120px;
 }
 
 .sec1 .intro a {
@@ -47,12 +60,24 @@ header .right a:nth-child(1),
     margin-bottom: 20px;
 }
 
+.bn2 {
+    flex-direction: column;
+}
+
 .bn2 p {
     flex-direction: column;
 }
 
 .bn2 p span {
     margin-bottom: 10px;
+}
+
+.bn2 .txt {
+    margin-right: 0;
+}
+
+.bn2 a {
+    margin-top: 10px;
 }
 
 .award img {
@@ -68,6 +93,10 @@ header .right a:nth-child(1),
     margin-top: 200px;
     padding-right: 30px;
     text-align: right;
+}
+
+.modal-inner>ul>li {
+    margin-top: 50px;
 }
 
 .container {

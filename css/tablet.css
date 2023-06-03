@@ -29,7 +29,8 @@ header .right a:nth-child(1),
 .container p br,
 .container .swiper-button-next,
 .container .swiper-button-prev,
-.tabs span {
+.tabs span,
+.line {
     display: none;
 }
 
@@ -44,6 +45,10 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.sec1 .intro h1 {
+    font-family: 'NanumSquareAcr';
 }
 
 .sec1 .intro h1,

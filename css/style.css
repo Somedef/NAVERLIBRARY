@@ -282,7 +282,7 @@ header .right>a:nth-child(1),
 
 .bottom_btn {
     position: absolute;
-    bottom: 60px;
+    bottom: 80px;
     left: 50%;
     transform: translateX(-50%);
     -webkit-animation: arrowMove 1.6s infinite;
@@ -372,6 +372,19 @@ header .right>a:nth-child(1),
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    position: relative;
+}
+
+.hoverslide .box span {
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    font-size: 2.2rem;
+}
+
+.hoverslide .box.b03,
+.hoverslide .box.b04 {
+    color: #fff;
 }
 
 .hoverslide .box.b01 {
@@ -494,7 +507,7 @@ header .right>a:nth-child(1),
     display: none;
     font-family: 'NanumSquareAcr';
     font-size: 1.6rem;
-    /* letter-spacing: -1px; */
+    letter-spacing: .5px;
     padding-top: 10px;
 }
 
@@ -520,7 +533,8 @@ header .right>a:nth-child(1),
     transition: all 0.6s ease-out;
 }
 
-.hoverslide .box:hover .icons8 {
+.hoverslide .box:hover .icons8,
+.hoverslide .box:hover .floor {
     display: none;
 }
 
@@ -1282,21 +1296,18 @@ ul.tabs li.current {
     display: none;
     position: fixed;
     outline: none;
-    background-color: #3db1ed;
+    background-color: #fff;
     cursor: pointer;
-    bottom: 200px;
-    right: 5px;
+    bottom: 15px;
+    right: 15px;
     width: 50px;
-    height: 30px;
-    border-radius: 5px;
-    box-shadow: 0 -2px 10px rgb(0, 0, 0, .15);
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, .1);
     transition: .3s;
-    transform: rotate(90deg);
     font-size: 1.2rem;
-    color: #fff;
-    font-family: 'NanumSquareAcr';
-    letter-spacing: 0.5px;
     z-index: 9999;
+    color: #333;
 }
 
 .go-top span {
@@ -1319,7 +1330,9 @@ ul.tabs li.current {
     .picture,
     header .right a:nth-child(1),
     .bottom_btn,
-    .tabs span {
+    .tabs span,
+    .line,
+    .sec4 .left img {
         display: none;
     }
 
