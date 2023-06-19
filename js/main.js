@@ -4,6 +4,7 @@ AOS.init({
     return window.innerWidth < desktop;
   },
 });
+// 에이오에스
 
 $(document).ready(function () {
   $(".gnb li").on("mouseover focusin", function () {
