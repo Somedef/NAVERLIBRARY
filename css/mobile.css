@@ -59,10 +59,6 @@ header .right a:nth-child(3),
     padding-top: 20px;
 }
 
-.hoverslide .box {
-    width: 100%;
-}
-
 .hoverslide .box.b04 button,
 .hoverslide .box.b03 button,
 .hoverslide .box.b02 button,
