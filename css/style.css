@@ -618,6 +618,7 @@ header .right>a:nth-child(1),
     height: 460px;
     background: url(../img/도서관1.png);
     border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(104, 104, 104, 0.5);
 }
 
 .tabcontent {
@@ -812,6 +813,10 @@ ul.tabs li.current span::after {
 
 #tab01 {
     position: relative;
+}
+
+#tab01>.line {
+    right: -10px;
 }
 
 .line {
@@ -1213,9 +1218,9 @@ ul.tabs li.current {
 }
 
 .sec3 video {
-    /* box-shadow: 0px 0px 40px rgba(78, 78, 78, 0.3); */
+    box-shadow: 3px 3px 10px rgba(104, 104, 104, 0.5);
     border-radius: 10px;
-    border: 1px solid #e1e1e1;
+    /* border: 1px solid #e1e1e1; */
 }
 
 #map:focus {
