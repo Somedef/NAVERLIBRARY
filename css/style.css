@@ -366,7 +366,7 @@ header .right>a:nth-child(1),
 }
 
 .hoverslide .box {
-    width: 25%;
+    flex-basis: 25%;
     height: 300px;
     display: flex;
     align-items: center;
@@ -529,7 +529,7 @@ header .right>a:nth-child(1),
 }
 
 .hoverslide .box:hover {
-    width: 100%;
+    flex-basis: 100%;
     transition: all 0.6s ease-out;
 }
 
