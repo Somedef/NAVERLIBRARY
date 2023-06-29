@@ -757,19 +757,29 @@ footer .inner>* {
 
 
 .container h2 {
-    font-size: 8rem;
-    font-family: 'NanumSquareNeoLight';
-    color: #c5c5c5;
+    font-size: 10rem;
+    font-family: "Montserrat", sans-serif;
+    color: #c4c4c4;
+    opacity: 0.2;
     position: absolute;
-    right: 465px;
+    right: 390px;
     top: -100px;
 }
 
+.container h2 span {
+    font-size: 8.5rem;
+}
+
 .container .top p {
-    font-size: 2.4rem;
-    font-family: 'NanumSquareAcr';
-    line-height: 30px;
+    font-size: 4rem;
+    font-family: 'NanumSquareAcb';
+    line-height: 60px;
+    letter-spacing: 1px;
     color: rgb(51, 51, 51, .8);
+}
+
+.container .top p span {
+    color: #03c75a;
 }
 
 ul.tabs {
@@ -831,7 +841,7 @@ ul.tabs li.current span::after {
 }
 
 ul.tabs li.current {
-    color: #3db1ed;
+    color: #03c75a;
     transition: .3s;
     font-family: 'NanumSquareAcb';
     padding-left: 20px;
@@ -921,9 +931,7 @@ ul.tabs li.current {
     background-position: center;
     position: absolute;
     left: -420px;
-    top: 350px;
-    /* width: 68px;
-    height: 68px; */
+    top: 430px;
 }
 
 .container .swiper-button-prev {
@@ -932,7 +940,7 @@ ul.tabs li.current {
     background-position: center;
     position: absolute;
     left: -470px;
-    top: 350px;
+    top: 430px;
 }
 
 .container .swiper-button-next::after,
@@ -1356,6 +1364,7 @@ ul.tabs li.current {
         display: flex;
         flex-direction: column;
         align-items: center;
+        white-space: nowrap;
     }
 
 
