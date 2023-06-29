@@ -108,3 +108,7 @@ header .right a:nth-child(3),
 .container {
     left: 0;
 }
+
+div {
+    left: 0;
+}
