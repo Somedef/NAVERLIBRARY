@@ -23,8 +23,13 @@ header .right a:nth-child(3),
 .modal-inner>ul>li>ul>li>a,
 .container p br,
 .sec4 .bottom .left img,
-.sec1 .intro a {
+.sec1 .intro a,
+.sec3 .more img {
     display: none;
+}
+
+.sec1 .intro {
+    bottom: 65px;
 }
 
 .sec1 .intro h1 {
@@ -107,4 +112,13 @@ header .right a:nth-child(3),
 
 .container {
     left: 0;
+}
+
+.container .top p {
+    font-size: 18px;
+}
+
+.sec3 h3,
+.tabcontent .txt p {
+    text-align: center;
 }
