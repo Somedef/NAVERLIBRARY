@@ -662,12 +662,14 @@ header .right>a:nth-child(1),
 
 
 .sec3 {
-    padding-top: 250px;
+    padding-top: 200px;
+    padding-bottom: 0;
 }
 
 .sec3 .inner {
     border-bottom: 1px solid #d8d8d8;
     padding-bottom: 150px;
+    /* outline: 1px solid black; */
 }
 
 .sec3 .more {
@@ -744,7 +746,7 @@ footer .inner>* {
 }
 
 .container {
-    padding-top: 50px;
+    padding-top: 250px;
     position: relative;
     left: 240px;
     width: 100%;
@@ -763,11 +765,13 @@ footer .inner>* {
     opacity: 0.2;
     position: absolute;
     right: 390px;
-    top: -100px;
+    top: 100px;
 }
 
 .container h2 span {
-    font-size: 8.5rem;
+    /* font-size: 8.5rem; */
+    color: #03c75a;
+    opacity: 1;
 }
 
 .container .top p {
@@ -837,7 +841,7 @@ ul.tabs li.current span::after {
     border-radius: 0 10px 15px 10px;
     right: -8px;
     top: 10px;
-    z-index: -10;
+    z-index: -1;
 }
 
 ul.tabs li.current {
@@ -953,7 +957,7 @@ ul.tabs li.current {
 }
 
 .sec4 {
-    padding-top: 250px;
+    padding-top: 200px;
     padding-bottom: 100px;
 }
 
