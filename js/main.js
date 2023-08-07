@@ -227,10 +227,10 @@ $(".modal>.right>img:nth-child(4)").click(function () {
 
 var swiper = new Swiper(".thirdSwiper", {
   loop: true,
-  // autoplay: {
-  //   delay: 4000,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
   speed: 1000,
   pagination: {
     el: ".swiper-pagination",
