@@ -69,13 +69,21 @@ header {
     white-space: nowrap;
 }
 
-.text-box span {
+.text-box>p>span {
+    font-size: 3.8rem;
+    font-family: 'NanumSquareAcl';
+    color: rgb(255, 255, 255, .9);
+    margin-top: 0;
+}
+
+.text-box>span {
     display: inline-block;
     font-size: 1.5rem;
     margin-top: 45px;
     font-weight: 100;
-    font-family: 'NanumSquareAcb';
+    font-family: 'NanumSquareAcr';
     letter-spacing: 1px;
+    white-space: nowrap;
 }
 
 .sec2 {

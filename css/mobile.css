@@ -28,17 +28,8 @@ header .right a:nth-child(3),
     display: none;
 }
 
-.sec1 .intro {
-    bottom: 65px;
-}
 
-.sec1 .intro h1 {
-    font-size: 20px;
-    white-space: nowrap;
-    font-weight: 600;
-    letter-spacing: 1px;
-    padding-bottom: 0;
-}
+
 
 .sec4 .bottom>* {
     padding: 50px 30px;
