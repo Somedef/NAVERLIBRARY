@@ -226,6 +226,7 @@ $(".modal>.right>img:nth-child(4)").click(function () {
 // 모달
 
 var swiper = new Swiper(".thirdSwiper", {
+  effect: "fade",
   loop: true,
   autoplay: {
     delay: 5000,
