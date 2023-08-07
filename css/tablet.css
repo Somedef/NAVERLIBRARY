@@ -18,7 +18,6 @@ section {
     padding: 0 30px;
 }
 
-.sec1 p,
 .bottom_btn,
 .picture,
 .gnb,
@@ -29,6 +28,8 @@ header .right a:nth-child(1),
 .container p br,
 .container .swiper-button-next,
 .container .swiper-button-prev,
+.main .swiper-button-next,
+.main .swiper-button-prev,
 .tabs span,
 .line {
     display: none;
@@ -38,27 +39,43 @@ header {
     padding: 25px 0;
 }
 
-.sec1 .intro {
-    bottom: 100px;
+.swiper-horizontal>.swiper-pagination-progressbar,
+.swiper-pagination-progressbar.swiper-pagination-horizontal,
+.swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite,
+.swiper-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
     left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    top: 62%;
+    transform: translate(-50%, -62%);
+    background: rgb(0, 0, 0, .15);
+}
+
+.main .swiper-wrapper {
+    height: 400px;
+}
+
+.text-box {
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    left: 50%;
+    bottom: 20%;
+    transform: translate(-50%, -20%);
+}
+
+.text-box p {
+    font-size: 3.6rem;
+    line-height: 1.5;
+    letter-spacing: 1px;
     white-space: nowrap;
 }
 
-.sec1 .intro h1 {
-    font-family: 'NanumSquareAcr';
-}
-
-.sec1 .intro h1,
-.sec1 .intro p {
-    text-align: center;
-}
-
-.sec1 .intro a {
-    position: relative;
+.text-box span {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-top: 45px;
+    font-weight: 100;
+    font-family: 'NanumSquareAcb';
+    letter-spacing: 1px;
 }
 
 .sec2 {

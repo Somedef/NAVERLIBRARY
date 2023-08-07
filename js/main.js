@@ -224,3 +224,24 @@ $(".modal>.right>img:nth-child(4)").click(function () {
   $(".modal").fadeOut(150);
 });
 // 모달
+
+var swiper = new Swiper(".thirdSwiper", {
+  loop: true,
+  // autoplay: {
+  //   delay: 4000,
+  //   disableOnInteraction: false,
+  // },
+  speed: 1000,
+  pagination: {
+    el: ".swiper-pagination",
+    type: "progressbar",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+alert(
+  "잠시 수정 및 보완중에 있으며 곧 마무리 될 예정입니다 참고해서 봐주시면 감사하겠습니다! 😲😲"
+);
