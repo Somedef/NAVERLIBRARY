@@ -69,6 +69,34 @@ header.active .search {
     background: url(../img/icons8-search\ \(5\).svg);
 }
 
+header:hover {
+    background-color: #fff;
+}
+
+header:hover .gnb li>a {
+    color: #333;
+}
+
+header:hover .right a:nth-child(1) {
+    color: #333;
+    font-family: 'NanumSquareAcb';
+}
+
+header:hover .hamburger {
+    background: url(../img/icons8-menu\ \(1\).svg);
+}
+
+header:hover .search {
+    background: url(../img/icons8-search\ \(5\).svg);
+
+}
+
+header:hover .globe {
+    background: url(../img/icons8-globe-24\ \(1\).png);
+}
+
+
+
 /* 헤더고정 */
 
 header {
@@ -80,7 +108,7 @@ header {
     font-family: 'NanumSquareAcr';
     display: flex;
     padding: 10px 0;
-    transition: 0.2s;
+    transition: 0.25s ease-in-out;
 }
 
 .nav-up {
@@ -90,7 +118,6 @@ header {
 header .inner {
     width: 1440px;
     margin: 0 auto;
-    /* outline: 1px solid black; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -105,6 +132,8 @@ header .logo {
 
 header .gnb {
     text-align: center;
+    outline: 1px solid black;
+    margin-left: 150px;
 }
 
 header .gnb>li {
@@ -127,46 +156,6 @@ header .gnb>li>a {
 /* line-height는 요소의 줄간 격과 높이를 함께 표현할 수 있고, 한 줄 텍스트는 자동으로 수직 가운데 정렬을 해준다. */
 
 
-header .gnb>li ul {
-    display: none;
-    position: absolute;
-    z-index: 10;
-    background-color: #fff;
-    width: 180px;
-    padding: 10px 0;
-    border-radius: 10px;
-    margin-top: 20px;
-    box-shadow: 0px 0px 40px #41414125;
-}
-
-header .gnb>li ul li {
-    display: flex;
-    flex-direction: column;
-}
-
-header .gnb>li ul li a {
-    display: block;
-    padding: 16px;
-    font-size: 1.6rem;
-    font-family: 'NanumSquareAcb';
-    color: #333;
-    transition: .3s;
-    font-weight: lighter;
-}
-
-header .gnb>li ul li a:hover,
-header .gnb>li ul li a:focus {
-    color: #3db1ed;
-}
-
-header .gnb>li:nth-child(1) ul,
-header .gnb>li:nth-child(3) ul,
-header .gnb>li:nth-child(4) ul,
-header .gnb>li:nth-child(2) ul {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-}
 
 header .right>* {
     cursor: pointer;
@@ -213,22 +202,6 @@ header .right>a:nth-child(1),
     background: url(../img/icons8-menu.svg);
     width: 24px;
     height: 24px;
-}
-
-.main video {
-    width: 100%;
-}
-
-@keyframes arrowMove {
-
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(8px);
-    }
 }
 
 .sec2 {
