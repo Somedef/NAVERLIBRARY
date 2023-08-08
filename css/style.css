@@ -124,7 +124,7 @@ header .inner {
 }
 
 header .logo {
-    background: url(../img/LIBRARY.svg) 0 0 no-repeat;
+    background: url(../img/Frame\ 102.svg) 0 0 no-repeat;
     background-size: contain;
     width: 100px;
     height: 20px;
@@ -132,7 +132,6 @@ header .logo {
 
 header .gnb {
     text-align: center;
-    outline: 1px solid black;
     margin-left: 150px;
 }
 
@@ -582,9 +581,8 @@ header .right>a:nth-child(1),
 
 footer {
     background-color: #131618;
-    padding: 50px 50px;
     font-family: 'NanumSquareAcr';
-    padding: 85px 0;
+    padding: 70px 0;
 }
 
 footer .inner {
@@ -599,6 +597,10 @@ footer .inner>* {
 #f3,
 #f5 {
     justify-content: center;
+}
+
+#f1 {
+    margin-top: 25px;
 }
 
 #f1 a {
@@ -616,30 +618,19 @@ footer .inner>* {
     color: rgb(255, 255, 255, .6);
     font-size: 1.4rem;
     font-weight: 300;
-    margin-top: 40px;
+    margin-top: 25px;
 }
 
-#f3,
-#f5 {
-    margin-top: 30px;
-}
-
-#f3 a {
-    color: rgb(228, 248, 147, .8);
-    font-size: 1.6rem;
-    font-weight: 500;
-}
-
-#f3 li:not(:first-of-type) {
-    margin-left: 40px;
+#f3 {
+    height: 25px;
 }
 
 #f5 {
     color: rgb(255, 255, 255, .6);
     text-align: center;
-    line-height: 24px;
     font-size: 1.2rem;
     font-weight: 300;
+    margin-top: 25px;
 }
 
 .container {
@@ -772,6 +763,7 @@ ul.tabs li.current {
     position: absolute;
     left: 10px;
     top: 10px;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .container .swiper-slide {
@@ -1403,6 +1395,11 @@ ul.tabs li.current {
         font-size: 2.2rem;
         line-height: 30px;
     }
+
+    #f2 {
+        justify-content: space-between;
+        font-size: 1.2rem;
+    }
 }
 
 .main {
@@ -1419,7 +1416,7 @@ ul.tabs li.current {
 
 
 .main .swiper-wrapper {
-    height: 765px;
+    height: 100vh;
 }
 
 .main .swiper-slide {
@@ -1507,7 +1504,7 @@ ul.tabs li.current {
     color: #fff;
     text-align: left;
     left: 17.5%;
-    bottom: 145px;
+    bottom: 200px;
     z-index: 1400;
 }
 
