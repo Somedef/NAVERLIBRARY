@@ -75,6 +75,7 @@ header:hover {
 
 header:hover .gnb li>a {
     color: #333;
+    transition: .3s;
 }
 
 header:hover .right a:nth-child(1) {
@@ -95,7 +96,9 @@ header:hover .globe {
     background: url(../img/icons8-globe-24\ \(1\).png);
 }
 
-
+header:hover .gnb>li>a:hover {
+    color: #3db1ed;
+}
 
 /* 헤더고정 */
 
@@ -108,7 +111,7 @@ header {
     font-family: 'NanumSquareAcr';
     display: flex;
     padding: 10px 0;
-    transition: 0.25s ease-in-out;
+    transition: 0.3s;
 }
 
 .nav-up {
@@ -132,7 +135,6 @@ header .logo {
 
 header .gnb {
     text-align: center;
-    margin-left: 150px;
 }
 
 header .gnb>li {
@@ -599,10 +601,6 @@ footer .inner>* {
     justify-content: center;
 }
 
-#f1 {
-    margin-top: 25px;
-}
-
 #f1 a {
     color: #fff;
     font-size: 1.4rem;
@@ -911,7 +909,10 @@ ul.tabs li.current {
     height: 200px;
     padding: 50px;
     color: #ffffff;
-    background-color: #3db1ed;
+    background: url(../img/info4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -936,20 +937,24 @@ ul.tabs li.current {
     font-size: 1.5rem;
     color: #fff;
     letter-spacing: 1px;
-    background-color: rgba(255, 255, 255, .2);
+    background-color: #000;
     transition: .2s linear;
     font-family: 'NanumSquareAcl';
     display: flex;
     justify-content: space-between;
     border-radius: 7.5px;
+    opacity: .8;
 }
 
 .sec4 .bottom a:hover {
-    background-color: #000;
+    opacity: 1;
 }
 
 .sec4 .bottom .left:last-child {
-    background-color: #03c75a;
+    background: url(../img/faq.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 10%;
 }
 
 .secondSwiper {
