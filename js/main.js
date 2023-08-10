@@ -229,10 +229,10 @@ $(".modal>.right>img:nth-child(4)").click(function () {
 var swiper = new Swiper(".thirdSwiper", {
   effect: "fade",
   loop: true,
-  // autoplay: {
-  //   delay: 5000,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
   speed: 1000,
   pagination: {
     el: ".swiper-pagination",
@@ -243,7 +243,4 @@ var swiper = new Swiper(".thirdSwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
-
-// alert(
-//   "잠시 수정 및 보완중에 있으며 곧 마무리 될 예정입니다 참고해서 봐주시면 감사하겠습니다! 😲😲"
-// );
+//main swiper
