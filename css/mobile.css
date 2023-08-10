@@ -76,13 +76,6 @@ ul.tabs>* {
     padding-top: 10px;
 }
 
-.sec4 .top {
-    padding: 68px 0;
-    background: url(../img/jason-leung-Xaanw0s0pMk-unsplash.jpg) 50% 50% no-repeat;
-    background-size: contain;
-    background-attachment: unset;
-}
-
 .sec4 .bottom>* {
     padding: 25px 30px;
     flex-direction: column;
@@ -197,6 +190,16 @@ ul.tabs>* {
     top: 80%;
 }
 
-.brkm {
-    display: inline;
+@media all and (max-width: 390px) {
+
+    .brkm {
+        display: inline;
+    }
+
+    .sec4 .top {
+        padding: 68px 0;
+        background: url(../img/jason-leung-Xaanw0s0pMk-unsplash.jpg) 50% 50% no-repeat;
+        background-size: contain;
+        background-attachment: unset;
+    }
 }
