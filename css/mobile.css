@@ -196,3 +196,7 @@ ul.tabs>* {
 .swiper-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
     top: 80%;
 }
+
+.brkm {
+    display: inline;
+}

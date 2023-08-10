@@ -653,6 +653,10 @@ footer .inner>* {
     margin-top: 25px;
 }
 
+.brkm {
+    display: none;
+}
+
 .container {
     padding-top: 250px;
     position: relative;
@@ -806,7 +810,6 @@ ul.tabs li.current {
     bottom: 0;
     background-color: #fff;
     border-radius: 0 0 15px 15px;
-    white-space: nowrap;
 }
 
 .container .swiper-slide .txt p {
