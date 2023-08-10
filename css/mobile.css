@@ -28,20 +28,75 @@ header .right a:nth-child(3),
     display: none;
 }
 
+header {
+    background-color: #fff;
+}
+
+.hamburger {
+    background: url(../img/icons8-menu\ \(1\).svg);
+}
+
+.award {
+    margin-left: 30px;
+}
+
+ul.tabs {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+ul.tabs>* {
+    margin-right: 25px;
+}
+
+.tab-content {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 35%;
+}
+
+.container .swiper-slide {
+    height: 200px;
+}
+
+.container .swiper-slide .txt {
+    white-space: nowrap;
+    overflow: hidden;
+}
 
 
+
+.sec4 {
+    padding-top: 10px;
+}
+
+.sec4 .top {
+    padding: 68px 0;
+    background: url(../img/jason-leung-Xaanw0s0pMk-unsplash.jpg) 50% 50% no-repeat;
+    background-size: contain;
+    background-attachment: unset;
+}
 
 .sec4 .bottom>* {
-    padding: 50px 30px;
+    padding: 25px 30px;
+    flex-direction: column;
 }
 
 .sec4 .bottom a {
     width: 120px;
+    margin-top: 10px;
 }
 
-.sec1 .intro a {
-    bottom: 20px;
+.sec4 .txt {
+    text-align: center;
 }
+
 
 .sec2 {
     padding: 50px 0 150px 0;
@@ -104,6 +159,7 @@ header .right a:nth-child(3),
 
 .container {
     left: 0;
+    padding-top: 320px;
 }
 
 .container .top p {

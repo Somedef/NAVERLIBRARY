@@ -802,11 +802,11 @@ ul.tabs li.current {
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    /* outline: 1px solid black; */
     position: absolute;
     bottom: 0;
     background-color: #fff;
     border-radius: 0 0 15px 15px;
+    white-space: nowrap;
 }
 
 .container .swiper-slide .txt p {
