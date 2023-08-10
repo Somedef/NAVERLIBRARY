@@ -86,6 +86,7 @@ header .right a:nth-child(3),
     width: 100%;
 }
 
+
 .modal .right {
     right: 28px;
     top: 26px;
@@ -112,4 +113,30 @@ header .right a:nth-child(3),
 .sec3 h3,
 .tabcontent .txt p {
     text-align: center;
+
+
+}
+
+.main .swiper-wrapper {
+    height: 71vh;
+}
+
+.text-box {
+    bottom: 10%;
+    font-family: 'NanumSquareAcl';
+}
+
+.text-box p {
+    font-size: 18px;
+}
+
+.text-box>p>span {
+    font-size: 18px;
+}
+
+.swiper-horizontal>.swiper-pagination-progressbar,
+.swiper-pagination-progressbar.swiper-pagination-horizontal,
+.swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite,
+.swiper-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+    top: 80%;
 }
